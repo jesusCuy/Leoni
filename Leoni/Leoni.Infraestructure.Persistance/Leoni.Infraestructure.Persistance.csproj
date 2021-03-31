@@ -1,15 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="3.1.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <Compile Remove="Migrations\20210331041041_AddAnalysisEntity.cs" />
+    <Compile Remove="Migrations\20210331041041_AddAnalysisEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210331043200_AddAnalysisEntity.cs" />
+    <Compile Remove="Migrations\20210331043200_AddAnalysisEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210331043236_AddAnalysisEntity.cs" />
+    <Compile Remove="Migrations\20210331043236_AddAnalysisEntity.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Leoni.Core.Domain\Leoni.Core.Domain.csproj" />
     <ProjectReference Include="..\Leoni.Infraestructure.Security\Leoni.Infraestructure.Security.csproj" />
   </ItemGroup>
 

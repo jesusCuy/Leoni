@@ -17,9 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leoni.Infraestructure.Persi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{19380BCF-C342-4813-93A3-5EB1B4D471D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leoni.Web.Api", "Leoni.Web.Api\Leoni.Web.Api.csproj", "{F78B2F4A-9F69-423E-8370-3C5D1D8077F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leoni.Web.Api", "Leoni.Web.Api\Leoni.Web.Api.csproj", "{F78B2F4A-9F69-423E-8370-3C5D1D8077F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leoni.Infraestructure.Security", "Leoni.Infraestructure.Security\Leoni.Infraestructure.Security.csproj", "{E2D8A6F9-4657-430A-BDF6-0A883AE45A17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leoni.Infraestructure.Security", "Leoni.Infraestructure.Security\Leoni.Infraestructure.Security.csproj", "{E2D8A6F9-4657-430A-BDF6-0A883AE45A17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

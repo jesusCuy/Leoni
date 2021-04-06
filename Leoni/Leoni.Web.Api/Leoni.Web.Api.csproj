@@ -39,6 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Leoni.Core.Application\Leoni.Core.Application.csproj" />
     <ProjectReference Include="..\Leoni.Infraestructure.Persistance\Leoni.Infraestructure.Persistance.csproj" />
   </ItemGroup>
 

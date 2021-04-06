@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Leoni.Infraestructure.Persistance;
 using Leoni.Infraestructure.Persistance.Context;
 using Leoni.Infraestructure.Security;
+using MediatR;
+using Leoni.Core.Application.Files.Commands.UploadFile;
 
 namespace Leoni.Web.Api
 {
@@ -45,6 +47,8 @@ namespace Leoni.Web.Api
             services.AddControllersWithViews();
             services.AddRazorPages();
 
+            services.AddMediatR(typeof(UploadFileCommand));
+
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -66,6 +70,7 @@ namespace Leoni.Web.Api
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

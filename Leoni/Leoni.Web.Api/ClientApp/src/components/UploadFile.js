@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Button, Form, FormGroup, Label, Input, FormText,Row, Col } from 'reactstrap';
+import { FileUploader } from './FileUploader'
 
 export class UploadFile extends Component {
+
   static displayName = UploadFile.name;
 
   render () {
@@ -20,14 +22,7 @@ export class UploadFile extends Component {
                   <Label for="exampleText">Text Area</Label>
                   <Input type="textarea" name="text" id="exampleText" />
                 </FormGroup>
-                <FormGroup>
-                  <Label for="exampleFile">File</Label>
-                  <Input type="file" name="file" id="exampleFile" />
-                  <FormText color="muted">
-                    This is some placeholder block-level help text for the above input.
-                    It's a bit lighter and easily wraps to a new line.
-                  </FormText>
-                </FormGroup>
+                <FileUploader />
                 <FormGroup tag="fieldset">
                   <legend>Radio Buttons</legend>
                   <FormGroup check>
@@ -49,8 +44,6 @@ export class UploadFile extends Component {
                     Check me out
                   </Label>
                 </FormGroup>
-                <br></br>
-                <Button >Submit</Button>
               </Form>
           </Col>
         </Row>
